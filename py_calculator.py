@@ -18,8 +18,8 @@ def  press(num):    #function to update the expression in the entry box
                   global expression
                   expression = ""
                   equation.set("")
-
-                 gui = Tk() #create a gui window  #Driver code
+        if __name__ == '__main__':
+         gui = Tk() #create a gui window  #Driver code
         gui.configure(background = "green") #set the background of gui wimdow
         gui.title("simple calc")
         gui.geometry(270*150) #set the configuration of gui window
@@ -34,7 +34,43 @@ def  press(num):    #function to update the expression in the entry box
                          command=lambda: press(1),height=(1), width=7)
         button1.grid(row=2, column=0)
 
+        button2 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(2),height=(1), width=7)
+        button2.grid(row=2, column=0)
 
+        button3 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(3),height=(1), width=7)
+        button3.grid(row=2, column=0)
+
+        button4 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(4),height=(1), width=7)
+        button4.grid(row=2, column=0)
+
+        button5 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(5),height=(1), width=7)
+        button5.grid(row=2, column=0)
+
+        button6 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(6),height=(1), width=7)
+        button6.grid(row=2, column=0)
+
+        button7 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(7),height=(1), width=7)
+        button7.grid(row=2, column=0)
+
+        button8 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(8),height=(1), width=7)
+        button8.grid(row=2, column=0)
+
+        button9 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(9),height=(1), width=7)
+        button9.grid(row=2, column=0)
+
+        button0 = Button(gui, text='1', fg='black',bg='red',
+                         command=lambda: press(0),height=(1), width=7)
+        button0.grid(row=2, column=0)
+
+        gui.mainloop()
 
 
 
